@@ -1,0 +1,15 @@
+{
+    "name": "pico-y-placa-predictor",
+    "version": "1.0.0",
+    "description": "Predictor de Pico y Placa",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "jest": "^29.0.0"
+    }
+  }

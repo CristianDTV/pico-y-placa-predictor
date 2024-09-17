@@ -25,5 +25,9 @@ yarn.lock
 
 # Other files and folders to ignore
 .DS_Store
+<<<<<<< HEAD
 Thumbs.db
 package-lock.json
+=======
+Thumbs.db
+>>>>>>> test
