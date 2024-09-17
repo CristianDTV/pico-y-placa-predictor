@@ -2,7 +2,7 @@ class PicoPlacaPredictor {
   constructor(licensePlate, dateString, timeString) {
     this.licensePlate = licensePlate;
     const [year, month, day] = dateString.split("-").map(Number);
-    this.date = new Date(dateString);
+    this.date = new Date(year, month - 1, day);
     this.time = this.parseTime(timeString);
   }
 
@@ -57,4 +57,4 @@ class PicoPlacaPredictor {
   }
 }
 
-module.exports = PicoPlacaPredictor;
+module.exports= PicoPlacaPredictor;
