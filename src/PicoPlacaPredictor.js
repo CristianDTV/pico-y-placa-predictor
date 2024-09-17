@@ -1,6 +1,7 @@
 class PicoPlacaPredictor {
   constructor(licensePlate, dateString, timeString) {
     this.licensePlate = licensePlate;
+    const [year, month, day] = dateString.split("-").map(Number);
     this.date = new Date(dateString);
     this.time = this.parseTime(timeString);
   }
@@ -30,7 +31,7 @@ class PicoPlacaPredictor {
 
     return (
       (totalMinutes >= morningStart && totalMinutes <= morningEnd) ||
-      (totalMinutes >= eveningStart && totalMinutes <= eveningEnd)
+      (totalMinutes >= eveningStart && totalMinutes < eveningEnd)
     );
   }
 
