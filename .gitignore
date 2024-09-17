@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Log files
+npm-debug.log
+yarn-error.log
+
+# Log directories
+logs/
+*.log
+
+# environment configuration files
+.env
+
+# package-lock files
+package-lock.json
+yarn.lock
+
+# build folder
+/dist
+
+# Temporary files
+*.tmp
+*.temp
+
+# Other files and folders to ignore
+.DS_Store
+Thumbs.db
