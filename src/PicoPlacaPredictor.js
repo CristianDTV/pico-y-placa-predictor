@@ -55,3 +55,5 @@ class PicoPlacaPredictor {
     return !this.isRestricted();
   }
 }
+
+module.exports = PicoPlacaPredictor;
